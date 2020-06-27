@@ -1,5 +1,9 @@
 :root {
-  --row-background-color: #eee;
+  --row-background-color: #ddd;
+}
+
+body {
+  background-image: linear-gradient(to right, orange, white, green);
 }
 
 body > div:not(:first-child) {
