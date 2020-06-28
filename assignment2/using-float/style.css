@@ -1,0 +1,41 @@
+:root {
+  --color-dark-grey: #555;
+  --color-lightest-grey: #eee;
+  --color-link: #5555ff;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-dark-grey);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.header {
+  min-height: 10%vh;
+  background-color: var(--color-lightest-grey);
+}
