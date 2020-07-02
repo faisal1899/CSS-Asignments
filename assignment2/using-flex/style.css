@@ -74,10 +74,21 @@ a:hover {
   flex-grow: 1;
 }
 
-.navbar-ul {
+.navbar {
   display: flex;
   justify-content: center;
 }
+
+.navbar-ul {
+  display: inline-flex;
+}
+
+/* .navbar-ul::before {
+  content: '';
+  display: table;
+  width: 50px;
+  background-color: aqua;
+} */
 
 .navbar-link {
   display: inline-block;
