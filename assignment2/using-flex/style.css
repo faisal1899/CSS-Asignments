@@ -37,20 +37,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Utilities */
-.clearfix::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
 /* Headings */
 .heading1 {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 35px;
   font-weight: 300;
-  text-align: center;
 }
 .heading2 {
   text-transform: uppercase;
@@ -68,30 +60,25 @@ a:hover {
 }
 
 .header-top {
+  display: flex;
   text-align: center;
 }
 
 .logo {
-  float: left;
   padding: 10px 20px;
   margin: 5px 10px;
   border: 1px solid var(--color-dark-grey);
 }
 
 .banner-heading {
-  display: inline-block;
+  flex-grow: 1;
 }
 
-.navbar {
-  text-align: center;
-  max-height: 37px;
-}
 .navbar-ul {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
-.navbar-li {
-  float: left;
-}
+
 .navbar-link {
   display: inline-block;
   padding: 5px 10px;
@@ -103,21 +90,18 @@ a:hover {
   padding: var(--gutter);
 }
 .content {
-  font-size: 0;
-  max-height: 80vh;
+  height: 80vh;
+  display: flex;
 }
 
 .left-panel,
 .main-panel,
 .right-panel {
-  font-size: 16px;
-  display: inline-block;
-  width: calc(20% - var(--gutter) + (var(--gutter) / 2));
+  flex: 0 1 calc(20% - var(--gutter) + (var(--gutter) / 2));
   background-color: var(--color-lightest-grey);
-  height: 100%;
   border: 1px solid var(--color-dark-grey);
-  min-height: calc(80vh - (var(--gutter) * 2));
 }
+
 
 .left-panel {
   margin-right: var(--gutter);
@@ -128,7 +112,7 @@ a:hover {
 }
 
 .main-panel {
-  width: calc(60% - var(--gutter));
+  flex: 1 0;
 }
 
 /* Footer */
